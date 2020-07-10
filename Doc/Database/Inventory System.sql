@@ -25,6 +25,6 @@ CREATE TABLE Records(
 	id_element INT NOT NULL,
 	id_laboratory INT NOT NULL,
 	FOREIGN KEY(id_element) REFERENCES Elements(id),
-	FOREIGN KEY(id_laboratory) REFERENCES Laboratory(id)
+	FOREIGN KEY(id_laboratory) REFERENCES Elements(id_laboratory)
 );
 
